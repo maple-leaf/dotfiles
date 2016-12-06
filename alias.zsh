@@ -1,0 +1,5 @@
+alias nv="nyaovim"
+alias spacemacs="HOME=~/spacemacs emacs"
+alias ec="emacs -nw"
+alias ss="/usr/local/opt/shadowsocks-libev/bin/ss-local -c /usr/local/etc/shadowsocks-libev.json"
+alias proxy="proxychains4"
