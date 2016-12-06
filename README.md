@@ -4,7 +4,7 @@
 - 安装[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 - 安装[tmux](https://github.com/tmux/tmux):  `brew install tmux`
 - 安装[fzf](https://github.com/junegunn/fzf):  `brew install fzf`
-- 安装[vim](http://www.vim.org/) 或者 [neovim](https://neovim.io/):  `brew install vim/macvim/neovim`
+- [可选]安装[vim](http://www.vim.org/) 或者 [neovim](https://neovim.io/):  `brew install vim/macvim/neovim`
 - [可选]安装[tmuxinator](https://github.com/tmuxinator/tmuxinator):  `gem install tmuxinator`
 
 # zsh配置
