@@ -2,8 +2,8 @@
 
 # 环境安装
 - 安装[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-- 安装[tmux](https://github.com/tmux/tmux):  `brew install tmux`
 - 安装[fzf](https://github.com/junegunn/fzf):  `brew install fzf`
+- [可选]安装[tmux](https://github.com/tmux/tmux):  `brew install tmux`
 - [可选]安装[vim](http://www.vim.org/) 或者 [neovim](https://neovim.io/):  `brew install vim/macvim/neovim`
 - [可选]安装[tmuxinator](https://github.com/tmuxinator/tmuxinator):  `gem install tmuxinator`
 
@@ -11,6 +11,14 @@
 - git clone https://github.com/maple-leaf/dotfiles.git ~/dotfiles
 - 按照官网安装完`oh-my-zsh`后，使用编辑器打开`~/.zshrc`(nvim .zshrc), 修改`ZSH_CUSTOM`为`ZSH_CUSTOM=$HOME/dotfiles`
 
+# tmux
+- 配置：个人使用[https://github.com/tony/tmux-config](https://github.com/tony/tmux-config)
+- 管理session： [tmuxinator](https://github.com/tmuxinator/tmuxinator), [tmuxp](https://github.com/tony/tmuxp)
+
+# vim/neovim
+- 配置
+    - [neovim](https://github.com/maple-leaf/nvim)
+    - [vim](https://github.com/maple-leaf/vimrc)
 
 # 本扩充配置介绍：
 - fco: fuzzy-finder方式的git分支切换

@@ -7,6 +7,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$GOPATH/bin:$HOME/.com
 export EDITOR='nvim'
 # variable required by neovim
 export XDG_DATA_HOME="$HOME/.config"
+
 # terimnal cmd for vscode
 function code {
     if [[ $# = 0 ]]
