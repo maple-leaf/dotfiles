@@ -13,9 +13,48 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # fco - checkout git branch
 fco() {
     local branches branch
-    branches=$(git branch -vv) &&
+    branches=$(git branch) &&
         branch=$(echo "$branches" | fzf +m) &&
         git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+}
+
+# fmr - merge branch
+fmr() {
+    local branches branch
+    branches=$(git branch) &&
+        branch=$(echo "$branches" | fzf +m) &&
+        git merge $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+}
+
+# fbd - delete branch
+fbd() {
+    while out=$(
+        git branch |
+        fzf --ansi --no-sort --query="$q" --print-query \
+            --expect=ctrl-m);
+    do
+        out=($(echo $out))
+        key=$out[-2]
+        branch=$out[-1]
+        if [[ $key = "ctrl-m" ]]; then
+            echo "Really delete branch: "$branch
+            select yn in "Yes" "No"; do
+                case $yn in
+                    Yes )
+                        git branch -d $branch;
+                        echo "Really delete branch on !!REMOTE!!: "$branch
+                        select Ryn in "Yes" "No"; do
+                            case $Ryn in
+                                Yes ) git push origin -d $branch;break;;
+                                No ) break;;
+                            esac
+                        done
+                        break;;
+                    No ) break;;
+                esac
+            done
+        fi
+    done
 }
 
 # fcoc - checkout git commit
