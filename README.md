@@ -41,6 +41,7 @@
     file/2/of/all/changed/files
     ...
     ```
+- gloc: 仅查看`当前分支`相对于master分支所有新增commit格式化好的log, 格式如上
 
 
 
