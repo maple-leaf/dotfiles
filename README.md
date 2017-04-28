@@ -14,6 +14,7 @@
 # tmux
 - 配置：个人使用[https://github.com/tony/tmux-config](https://github.com/tony/tmux-config)
 - 管理session： [tmuxinator](https://github.com/tmuxinator/tmuxinator), [tmuxp](https://github.com/tony/tmuxp)
+- tmux内无法使用`y`进行拷贝时，请检查`Terminal`设置, 允许`Application can access clipboard`。具体查看这个[issue](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard/issues/56#issuecomment-271063847)
 
 # vim/neovim
 - 配置
