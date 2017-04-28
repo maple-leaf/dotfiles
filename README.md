@@ -19,6 +19,9 @@
 - 配置
     - [neovim](https://github.com/maple-leaf/nvim)
     - [vim](https://github.com/maple-leaf/vimrc)
+- 如果你在tmux内使用neovim则需要将`alias.zsh`关于`nvim`的alias注释去掉，并安装`reattch-to-user-namespace`，解决剪贴板问题。
+    - alias nvim="reattach-to-user-namespace -l nvim"
+    - brew install reattach-to-user-namespace
 
 # 本扩充配置介绍：
 - fco: fuzzy-finder方式的git分支切换
