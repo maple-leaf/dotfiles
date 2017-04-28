@@ -1,0 +1,22 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/655382c/
+ec	alias.zsh	/^alias ec="emacs -nw"$/;"	a
+fbd	fzf-config.zsh	/^fbd() {$/;"	f
+fco	fzf-config.zsh	/^fco() {$/;"	f
+fcoc	fzf-config.zsh	/^fcoc() {$/;"	f
+flo	fzf-config.zsh	/^flo() {$/;"	f
+fmr	fzf-config.zsh	/^fmr() {$/;"	f
+ftags	fzf-config.zsh	/^ftags() {$/;"	f
+gdc	oh-my-zsh-custom.zsh	/^alias gdc='git diff --cached'$/;"	a
+glo	oh-my-zsh-custom.zsh	/^alias glo='git log --name-only --date=short --pretty=format:"%Cblue%h %C(yellow)%aN %Creset%aI %/;"	a
+gloc	oh-my-zsh-custom.zsh	/^alias gloc='git log --name-only --date=short --pretty=format:"%Cblue%h %C(yellow)%aN %Creset%aI /;"	a
+gstll	oh-my-zsh-custom.zsh	/^alias gstll='git stash list | awk -F: '"'"'{ print "\\n\\n\\n\\n"; print $0; print "\\n\\n"; sys/;"	a
+nv	alias.zsh	/^alias nv="nyaovim"$/;"	a
+proxy	alias.zsh	/^alias proxy="proxychains4"$/;"	a
+spacemacs	alias.zsh	/^alias spacemacs="HOME=~\/spacemacs emacs"$/;"	a
+ss	alias.zsh	/^alias ss="\/usr\/local\/opt\/shadowsocks-libev\/bin\/ss-local -c \/usr\/local\/etc\/shadowsocks-/;"	a
