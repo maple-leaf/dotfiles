@@ -8,3 +8,4 @@ export EDITOR='nvim'
 # variable required by neovim
 export XDG_DATA_HOME="$HOME/.config"
 
+ulimit -n 2048
