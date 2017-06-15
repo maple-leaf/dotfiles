@@ -9,6 +9,7 @@
 
 # zsh配置
 - git clone https://github.com/maple-leaf/dotfiles.git ~/dotfiles
+- 配置可以参考[此配置](https://gist.github.com/kevin-smets/8568070)
 - 按照官网安装完`oh-my-zsh`后，使用编辑器打开`~/.zshrc`(nvim .zshrc), 修改`ZSH_CUSTOM`为`ZSH_CUSTOM=$HOME/dotfiles`
 
 # tmux
