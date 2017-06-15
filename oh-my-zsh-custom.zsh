@@ -2,7 +2,7 @@
 #  Basic  #
 ###########
 
-ZSH_THEME="michelebologna"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 plugins=(git gitfast osx )
 
