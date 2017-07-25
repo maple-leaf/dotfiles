@@ -18,3 +18,5 @@ alias gloc='git log --name-only --date=short --pretty=format:"%Cblue%h %C(yellow
 
 # list all statsh with diff detail
 alias gstll='git stash list | awk -F: '"'"'{ print "\n\n\n\n"; print $0; print "\n\n"; system("git stash show -p " $1); }'"'"''
+
+alias gsta='git add . && git stash save'
