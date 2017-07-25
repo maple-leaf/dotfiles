@@ -3,6 +3,7 @@ alias spacemacs="HOME=~/spacemacs emacs"
 alias ec="emacs -nw"
 alias ss="/usr/local/opt/shadowsocks-libev/bin/ss-local -c /usr/local/etc/shadowsocks-libev.json"
 alias proxy="proxychains4"
+alias psqld="pg_ctl -D /usr/local/var/postgres start"
 
 # http://stackoverflow.com/a/39741226
 # clipboard-failure-in-tmux-vim-after-upgrading-to-macos-sierra
