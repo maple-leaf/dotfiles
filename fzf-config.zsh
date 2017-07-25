@@ -103,7 +103,7 @@ fstl() {
     while out=$(
         git stash list |
         fzf --ansi --no-sort --query="$q" --print-query \
-            --expect=ctrl-m,ctrl-b,ctrl-d);
+            --expect=ctrl-m,ctrl-b,ctrl-d,ctrl-o);
     do
         out=($(echo $out | cut -d " " -f1))
         key=$(echo $out | cut -d " " -f 1)
@@ -116,6 +116,12 @@ fstl() {
             read dropConfirm
             if [[ $dropConfirm = 'yes' ]]; then
                 git stash drop $stash
+            fi
+        elif [[ $key = "ctrl-o" ]]; then
+            echo "Pop $stash, type 'yes' to confirm, blank/others to cancel"
+            read popConfirm
+            if [[ $popConfirm = 'yes' ]]; then
+                git stash pop $stash
             fi
         elif [[ $key = "ctrl-b" ]]; then
             branches=$(git branch)
