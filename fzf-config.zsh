@@ -69,10 +69,10 @@ fcoc() {
 ftags() {
     local tags branches target
     tags=$(
-    git tag | awk '{print "\x1b[31;1mtag\x1b[m\t" $1}') || return
+    git tag --sort=-creatordate) || return
     target=$(
     (echo "$tags") |
-    fzf-tmux -d30 -- --no-hscroll --ansi +m -d "\t" -n 2) || return
+    fzf -e) || return
     git checkout $(echo "$target" | awk '{print $2}')
 }
 
