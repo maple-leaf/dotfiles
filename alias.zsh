@@ -5,6 +5,7 @@ alias ss="/usr/local/opt/shadowsocks-libev/bin/ss-local -c /usr/local/etc/shadow
 # alias proxy="proxychains4"
 alias proxy="/usr/local/Cellar/privoxy/3.0.26/sbin/privoxy /etc/privoxy/config"
 alias psqld="pg_ctl -D /usr/local/var/postgres start"
+alias cnpm="npm --registry=https://registry.npm.taobao.org"
 
 alias gdp="git diff head~"
 
