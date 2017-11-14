@@ -6,6 +6,9 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 
 plugins=(git gitfast osx )
 
+HISTSIZE=1000
+SAVEHIST=1000
+
 #########
 #  Git  #
 #########
