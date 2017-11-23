@@ -16,7 +16,7 @@ SAVEHIST=1000
 unalias gdca
 alias gdc='git diff --cached'
 
-alias glo='git log --name-only --date=short --pretty=format:"%Cblue%h %C(yellow)%aN %Creset%aI %Cgreen%s"'
+alias glo='git log --name-only --date=short --pretty=format:"%Cblue%h %C(yellow)%aN %Creset%aI %Cgreen%s%n%Creset%b"'
 alias gloc='git log --name-only --date=short --pretty=format:"%Cblue%h %C(yellow)%aN %Creset%aI %Cgreen%s" master..'
 
 # list all statsh with diff detail
