@@ -13,3 +13,6 @@ alias gdp="git diff head~"
 # http://stackoverflow.com/a/39741226
 # clipboard-failure-in-tmux-vim-after-upgrading-to-macos-sierra
 #alias nvim="reattach-to-user-namespace -l nvim"
+#
+
+alias hs="python -m SimpleHTTPServer"
