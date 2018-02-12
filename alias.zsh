@@ -16,3 +16,5 @@ alias gdp="git diff head~"
 #
 
 alias hs="python -m SimpleHTTPServer"
+
+alias jest-debug="node --inspect-brk node_modules/.bin/jest --runInBand"
