@@ -26,6 +26,23 @@ fmr() {
         git merge $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
 }
 
+# frb - rebase branch
+frb() {
+    local branches branch
+    branches=$(git branch) &&
+        branch=$(echo "$branches" | fzf +m) &&
+        git rebase --interactive --autosquash $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+}
+
+# frc - rebase commit of current branch
+frc() {
+    local commits commit
+    commits=$(git log --pretty=oneline --abbrev-commit --reverse) &&
+        commit=$(echo "$commits" | fzf --tac +s +m -e) &&
+        chash=$(echo "$commit" | sed "s/ .*//") &&
+        git rebase --interactive --autosquash $(echo "$chash")
+}
+
 # fbd - delete branch
 fbd() {
     while out=$(
@@ -134,4 +151,15 @@ fstl() {
             break
         fi
     done
+}
+
+
+# fcf - git commit fixup and then rebase
+fcf() {
+    local commits commit
+    commits=$(git log --pretty=oneline --abbrev-commit --reverse) &&
+        commit=$(echo "$commits" | fzf --tac +s +m -e) &&
+        chash=$(echo "$commit" | sed "s/ .*//") &&
+        git commit --fixup $(echo "$chash") &&
+        git rebase --interactive --autosquash $(echo "$chash~1")
 }
