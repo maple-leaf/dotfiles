@@ -1,0 +1,11 @@
+.history
+tags
+tags.lock
+tags.temp
+GPATH
+GRTAGS
+GTAGS
+TODO
+TODOs.org
+yarn-error.log
+.vim-ale-js-disable-prettier
