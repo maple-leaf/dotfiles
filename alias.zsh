@@ -25,9 +25,10 @@ alias dockerStopAll="docker stop $(docker ps -aq)"
 #alias nvim="reattach-to-user-namespace -l nvim"
 #
 
-alias hs="python -m SimpleHTTPServer"
+alias httpserver="python -m SimpleHTTPServer"
 
-alias jest-debug="node --inspect-brk node_modules/.bin/jest --runInBand"
+alias jestd="node --inspect-brk node_modules/.bin/jest --runInBand"
+alias jestmatch="npx jest -t"
 
 # list active pids for panels
 alias tmuxps="tmux list-panes -F '#{pane_active} #{pane_pid}'"
