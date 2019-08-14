@@ -32,3 +32,6 @@ alias jestmatch="npx jest -t"
 
 # list active pids for panels
 alias tmuxps="tmux list-panes -F '#{pane_active} #{pane_pid}'"
+
+# generate compile_commands.json
+alias ccjson="cmake -H. -BDebug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=YES && mv ./Debug/compile_commands.json . && rm -rf ./Debug"

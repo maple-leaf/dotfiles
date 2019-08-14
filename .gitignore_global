@@ -10,3 +10,6 @@ TODOs.org
 yarn-error.log
 .vim-ale-js-disable-prettier
 .external-ecmascript.js
+.ccls-cache
+.ccls
+compile_commands.json
