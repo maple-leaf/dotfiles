@@ -1,3 +1,4 @@
+export LANG=en_US.UTF-8
 export GOPATH="$HOME/go"
 
 export ANDROID_HOME=/usr/local/opt/android-sdk

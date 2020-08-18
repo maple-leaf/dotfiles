@@ -13,6 +13,7 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org"
 # git stuffs
 alias gdp="git diff head~"
 alias gcz="git cz"
+alias gbdesc="git config branch.$(current_branch).description"
 
 # docker
 # get into container shell

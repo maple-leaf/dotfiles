@@ -2,7 +2,7 @@
 #  Basic  #
 ###########
 
-plugins=(git gitfast osx )
+# plugins=(git gitfast osx nvm)
 
 HISTSIZE=1000
 SAVEHIST=1000
@@ -24,3 +24,6 @@ alias gsta='git add . && git stash save'
 alias gstpu='git stash push'
 
 alias grb='git rebase --interactive --autosquash'
+
+alias gunstage='git restore --staged'
+alias gdiscard='git restore'
