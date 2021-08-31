@@ -36,3 +36,6 @@ alias tmuxps="tmux list-panes -F '#{pane_active} #{pane_pid}'"
 # generate compile_commands.json
 # https://github.com/MaskRay/ccls/wiki/Project-Setup#cmake
 alias ccjson="cmake -H. -BDebug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=YES && mv ./Debug/compile_commands.json . && rm -rf ./Debug"
+
+# list changed files in current branch only
+alias filechanges="git log --first-parent --no-merges --oneline | grep "37807" | cut -d ' ' -f1 | xargs -I hash git diff-tree --no-commit-id --name-only -r hash | uniq -u | sort"
