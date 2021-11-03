@@ -16,7 +16,9 @@
 - 配置：个人基于[https://github.com/tony/tmux-config](https://github.com/tony/tmux-config)进行更改
 - 安装
     - ln -s ~/dotfiles/.tmux.conf .tmux.conf  
-    - install TPM: https://github.com/tmux-plugins/tpm
+    - install TPM: `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+    - start tmux: tmux
+    - install TPM plugins: <ctrl+a>+I
 - tmux内无法使用`y`进行拷贝时，请检查`Terminal`设置, 允许`Application can access clipboard`。具体查看这个[issue](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard/issues/56#issuecomment-271063847)
 
 # vim/neovim
